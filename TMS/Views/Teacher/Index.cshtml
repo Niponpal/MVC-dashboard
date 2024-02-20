@@ -1,0 +1,42 @@
+﻿@model IEnumerable<TMS.Models.Teacher>
+
+@{
+	int id = 1;
+
+}
+
+<a class="btn btn-dark" asp-action="CreateOrEdit" asp-controller="Teacher">Input</a>
+
+<table class=" table table-bordered table-success table-responsive ">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Phone</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var itam in Model)
+		{
+			<tr>
+				<td>@id</td>
+				<td>@itam.Name</td>
+				<td>@itam.Phone</td>
+				<td>@itam.Email</td>
+				<td>@itam.Address</td>
+				<td><a class="btn btn-dark" asp-action="CreateOrEdit" asp-controller="Teacher" asp-route-id="@itam.Id">Edit</a>
+
+					<a class="btn btn-danger" onclick="return confirm('Deleted this mesage')" asp-action="Deleted" asp-controller="Teacher" asp-route-id="@itam.Id">Deleted</a>
+
+					<a class="btn btn-info" asp-action="Detials" asp-controller="Teacher" asp-route-id="@itam.Id">Details</a>
+
+
+				</td>
+			</tr>
+			id++;
+		}
+	</tbody>
+</table>

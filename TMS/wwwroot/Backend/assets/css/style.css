@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+  
+}
+/* <!-- Lift side bar Design Start--> */
+
+.sidebar .Main .left-side {
+    background-color: rgba(1, 1, 12, 0.849);
+    width: 40px;
+    height: 100vh;
+}
+
+.sidebar .Main .left-side:hover{
+    width: 230px;
+    transition: 2s;
+}
+
+.sidebar .Main .left-side .text h2{
+    color: white;
+}
+.sidebar .Main .left-side .text span{
+    color: orange;
+    font-size: 22px;
+}
+.sidebar .Main .left-side .text-1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.sidebar .Main .left-side .text-1 span{
+    color: white;
+    font-size: 15px;
+
+}
+
+.sidebar .Main .left-side .text-1:hover{
+    background-color:rgba(0, 0, 0, 0.808);
+}
+/* Right side Design Start */ 
+
+.sidebar .Main  .right-side  {
+    
+    width: 100%;
+   
+}
+
+.sidebar .Main  .right-side .nav-bar .navbar  {
+     background-color:rgb(240, 217, 217) !important; 
+    height: 12vh !important;
+}
+.sidebar .Main  .right-side .nav-bar .navbar .container-fluid span{
+    color:black;
+    font-size: 30px;
+}
+
+.sidebar .Main  .right-side .nav-bar .navbar .container-fluid .navbar-brand{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+ .sidebar .Main  .right-side .nav-bar .navbar .container-fluid .form-control {
+    width: 400px ;
+} 
+
+.sidebar .Main  .right-side .nav-bar .navbar .container-fluid img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+/* Right side Design End */
+
+
+
+
+/* <!-- Lift side bar Design Start--> */

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TMS</title>
+
+    <partial name="Backend/Style" />
+
+    @await RenderSectionAsync("Style", required: false)
+
+    
+    
+</head>
+<body>
+    <partial name="Backend/Left_Sideber" />
+   
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <partial name="Backend/Script" />
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
